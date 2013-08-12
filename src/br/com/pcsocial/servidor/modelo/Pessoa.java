@@ -32,7 +32,7 @@ public class Pessoa implements Serializable {
 	@Column(nullable = false)
 	@Resolvable(colName = "Senha")
 	private String senha;
-	@Resolvable(colName = "Nome/Razao Social")
+	@Resolvable(colName = "Nome/RazÃ£o Social")
 	private String nomeRazaoSocial;
 	@Resolvable(colName = "Sobrenome/Nome Fantasia")
 	private String sobreNomeFantasia;
@@ -50,8 +50,8 @@ public class Pessoa implements Serializable {
 	private String cep;
 	@OneToOne
     private Cidade cidadeRef;
-	@Resolvable(colName = "Atribuicao")
-	private char atribuicao; //C - Cliente, H - H—spede. U - Usu‡rio, O - Operadora
+	@Resolvable(colName = "AtribuiÃ§Ã£")
+	private char atribuicao; //C - Cliente, H - Hï¿½spede. U - Usuï¿½rio, O - Operadora
 	@OneToOne
 	private Mercado segMercado;
 

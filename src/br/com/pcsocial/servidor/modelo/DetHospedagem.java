@@ -3,7 +3,6 @@ package br.com.pcsocial.servidor.modelo;
 import java.io.Serializable;
 import java.util.Date;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -29,7 +28,7 @@ public class DetHospedagem implements Serializable {
 	private Date dataEntrada;
 	@Temporal(javax.persistence.TemporalType.DATE)
 	private Date dataSaida;
-	@ManyToOne(cascade = CascadeType.PERSIST, optional=true)
+	@ManyToOne
 	@JoinColumn
 	@Fetch(FetchMode.JOIN)
 	private Hospedagem hospedagem;
@@ -39,6 +38,7 @@ public class DetHospedagem implements Serializable {
 	private Tarifa tarifa;
 
 	public DetHospedagem() {
+		hospedagem = new Hospedagem();
 
 	}
 

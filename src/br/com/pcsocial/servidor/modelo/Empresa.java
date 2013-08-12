@@ -36,7 +36,7 @@ public class Empresa implements Serializable {
 	private long id;
 	@Resolvable(colName = "Cod. Empresa PMS")
 	private long codempresa;
-	@Resolvable(colName = "Atribuição da Empresa")
+	@Resolvable(colName = "Atribui√ß√£o da Empresa")
 	private char atrEmpresa;
 	@OneToOne
 	private Pessoa pessoaEmpresa;

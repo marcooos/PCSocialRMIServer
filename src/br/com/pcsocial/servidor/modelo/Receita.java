@@ -21,7 +21,7 @@ public class Receita implements Serializable {
 	@GeneratedValue
 	@Resolvable(colName = "Id")
 	private long id;
-	@Resolvable(colName = "Descrição")
+	@Resolvable(colName = "Descri√ß√£o")
 	private String descricao;
 	@Resolvable(colName = "Cod. Receita PMS")
 	private long codPms;

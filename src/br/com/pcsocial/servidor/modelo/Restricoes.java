@@ -27,7 +27,7 @@ public class Restricoes implements Serializable {
 	@GeneratedValue
 	@Resolvable(colName = "Id")
 	private long id;
-	@Resolvable(colName = "Descrição")
+	@Resolvable(colName = "Descri√ß√£o")
 	private String descricao;
 	@ManyToMany(mappedBy="restricoes",fetch=FetchType.EAGER)
 	@Fetch(FetchMode.JOIN)

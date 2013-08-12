@@ -19,7 +19,7 @@ public class Pais implements Serializable {
 	@Id
 	@GeneratedValue
 	private Long id;
-	@Resolvable(colName = "Descrição")
+	@Resolvable(colName = "Descri√ß√£o")
 	private String descricao;
 
 	public Pais() {

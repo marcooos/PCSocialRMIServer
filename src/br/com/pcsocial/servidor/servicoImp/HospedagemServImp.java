@@ -42,10 +42,11 @@ public class HospedagemServImp extends UnicastRemoteObject implements
 	}
 
 	@Override
-	public boolean adicionarHospedagem(Hospedagem hospedagem, DetHospedagem detHospedagem,
-			ReceitaHospedagem recHospedagem) throws RemoteException {
+	public boolean adicionarHospedagem(Hospedagem hospedagem,
+			DetHospedagem detHospedagem, ReceitaHospedagem recHospedagem)
+			throws RemoteException {
 		try {
-			this.hospedagem.save(hospedagem,detHospedagem,recHospedagem);
+			this.hospedagem.save(hospedagem, detHospedagem, recHospedagem);
 			return true;
 		} catch (Exception e) {
 			return false;
@@ -53,10 +54,11 @@ public class HospedagemServImp extends UnicastRemoteObject implements
 	}
 
 	@Override
-	public boolean alterarHospedagem(Hospedagem hospedagem, DetHospedagem detHospedagem,
-			ReceitaHospedagem recHospedagem) throws RemoteException {
+	public boolean alterarHospedagem(Hospedagem hospedagem,
+			DetHospedagem detHospedagem, ReceitaHospedagem recHospedagem)
+			throws RemoteException {
 		try {
-			this.hospedagem.update(hospedagem,detHospedagem,recHospedagem);
+			this.hospedagem.update(hospedagem, detHospedagem, recHospedagem);
 			return true;
 		} catch (Exception e) {
 			return false;
@@ -75,5 +77,13 @@ public class HospedagemServImp extends UnicastRemoteObject implements
 		List<Hospedagem> lista = hospedagem.list(dataInicial, dataFinal);
 		listaHospedagems = new ArrayList(lista);
 		return listaHospedagems;
+	}
+
+	@SuppressWarnings({ "rawtypes"})
+	@Override
+	public List getListarOcupacaoRestricao(Date dataInicial, Date dataFinal)
+			throws RemoteException {
+		
+		return null;
 	}
 }

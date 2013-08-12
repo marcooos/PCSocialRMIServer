@@ -29,7 +29,7 @@ public class Cidade implements Serializable {
 	@GeneratedValue
 	@Resolvable(colName = "Id")
 	private Long id;
-	@Resolvable(colName = "Descrição")
+	@Resolvable(colName = "Descri√ß√£o")
 	private String descricao;
 	@ManyToOne
 	@JoinColumn

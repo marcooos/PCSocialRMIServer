@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//src/br/com/pcsocial/servidor/modelo/Apartamento.java=UTF-8
+encoding//src/br/com/pcsocial/servidor/modelo/Canais.java=UTF-8
+encoding//src/br/com/pcsocial/servidor/modelo/Cidade.java=UTF-8
+encoding//src/br/com/pcsocial/servidor/modelo/Classes.java=UTF-8
+encoding//src/br/com/pcsocial/servidor/modelo/Demanda.java=UTF-8
+encoding//src/br/com/pcsocial/servidor/modelo/Empresa.java=UTF-8
+encoding//src/br/com/pcsocial/servidor/modelo/Estado.java=UTF-8
+encoding//src/br/com/pcsocial/servidor/modelo/Mercado.java=UTF-8
+encoding//src/br/com/pcsocial/servidor/modelo/Pais.java=UTF-8
+encoding//src/br/com/pcsocial/servidor/modelo/Pessoa.java=UTF-8
+encoding//src/br/com/pcsocial/servidor/modelo/Receita.java=UTF-8
+encoding//src/br/com/pcsocial/servidor/modelo/Restricoes.java=UTF-8
+encoding//src/br/com/pcsocial/servidor/modelo/Tarifa.java=UTF-8
+encoding//src/br/com/pcsocial/servidor/modelo/Temporada.java=UTF-8
+encoding//src/br/com/pcsocial/servidor/visao/ServidorUI.java=UTF-8

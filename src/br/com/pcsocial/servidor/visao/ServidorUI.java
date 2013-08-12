@@ -15,12 +15,12 @@ import javax.swing.JTextArea;
 import br.com.pcsocial.servidor.servicoServer.ServicoServer;
 
 public class ServidorUI {
-	private JLabel label1 = new JLabel("Servidor de Aplicação");
+	private JLabel label1 = new JLabel("Servidor de Aplica√ß√£o");
 	private JTextArea mensagemConexao = new JTextArea();
 	private JButton btnIniciar = new JButton("Iniciar Servidor"),
 			btnParar = new JButton("Parar Servidor"), btnSair = new JButton(
 					"Fechar Servidor");
-	private JFrame frame = new JFrame("Servidor de aplicação");
+	private JFrame frame = new JFrame("Servidor de aplica√ß√£o");
 	private JPanel painelSuperior = new JPanel(),
 			painelInferior = new JPanel();
 	private BorderLayout layout = new BorderLayout();
@@ -57,7 +57,7 @@ public class ServidorUI {
 		frame.add(painelInferior, BorderLayout.SOUTH);
 		frame.setVisible(true);
 
-		// Eventos botões
+		// Eventos botÔøΩes
 		btnIniciar.addActionListener(al);
 		btnParar.addActionListener(al);
 		btnSair.addActionListener(al);
@@ -77,7 +77,7 @@ public class ServidorUI {
 			}
 			if (e.getSource().equals(btnSair)) {
 				if (javax.swing.JOptionPane.showConfirmDialog(null,
-						"Atenção o servidor será desligado", "Confirme sua operação ",
+						"Aten√ß√£o o servidor ser√° desligado", "Confirme sua opera√ß√£o ",
 						javax.swing.JOptionPane.YES_NO_OPTION) == 0) {
 					ms.stopAplicationServer();
 					System.exit(0);

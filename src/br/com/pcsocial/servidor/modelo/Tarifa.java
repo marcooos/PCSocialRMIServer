@@ -28,13 +28,13 @@ public class Tarifa implements Serializable {
 	@GeneratedValue
 	@Resolvable(colName = "Id")
 	private long id;
-	@Resolvable(colName = "Descrição")
+	@Resolvable(colName = "Descri√ß√£o")
 	private String descricao;
 	@Resolvable(colName = "Cod. Tarifa PMS")
 	private long codPms;
 	@Resolvable(colName = "Venda on-line")
 	private char vendaOnline;
-	@Resolvable(colName = "Venda variavél")
+	@Resolvable(colName = "Venda variav√©l")
 	private char tarifaVariavel;
 	@ManyToMany(fetch=FetchType.EAGER)
 	@Fetch(FetchMode.JOIN)

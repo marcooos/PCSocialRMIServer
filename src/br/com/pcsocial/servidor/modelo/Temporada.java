@@ -24,7 +24,7 @@ public class Temporada implements Serializable {
 	@GeneratedValue
 	@Resolvable(colName = "Id")
 	private long id;
-	@Resolvable(colName = "Descrição")
+	@Resolvable(colName = "Descri√ß√£o")
 	private String descricao;
 	@Resolvable(colName = "Data Inical")
 	@Temporal(javax.persistence.TemporalType.DATE)

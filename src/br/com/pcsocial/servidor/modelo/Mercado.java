@@ -21,7 +21,7 @@ public class Mercado implements Serializable {
 	@GeneratedValue
 	@Resolvable(colName = "Id")
 	private long id;
-	@Resolvable(colName = "Descrição")
+	@Resolvable(colName = "Descri√ß√£o")
 	private String descricao;	
 
 	public Mercado() {

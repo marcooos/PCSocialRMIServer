@@ -17,6 +17,10 @@ public interface HospedagemServ extends Remote {
 	@SuppressWarnings("rawtypes")
 	public List getListarHospedagems(Date dataInicial, Date dataFinal)
 			throws RemoteException;
+	
+	@SuppressWarnings("rawtypes")
+	public List getListarOcupacaoRestricao(Date dataInicial, Date dataFinal)
+			throws RemoteException;
 
 	public Hospedagem getHospedagem(long id) throws RemoteException;
 

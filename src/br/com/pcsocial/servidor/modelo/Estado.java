@@ -28,7 +28,7 @@ public class Estado implements Serializable {
 	@Id
 	@GeneratedValue
 	private Long id;
-	@Resolvable(colName = "Descrição")
+	@Resolvable(colName = "Descri√ß√£o")
 	private String descricao;
 	@ManyToOne
 	@JoinColumn

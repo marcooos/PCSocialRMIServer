@@ -29,9 +29,9 @@ public class Apartamento implements Serializable {
 	@GeneratedValue
 	@Resolvable(colName = "Id")
 	private long id;
-	@Resolvable(colName = "Descrição")
+	@Resolvable(colName = "Descri√ß√£o")
 	private String descricao;
-	@Resolvable(colName = "Abreviação")
+	@Resolvable(colName = "Abrevia√ß√£o")
 	private String descricaoAbreviada;
 	@Resolvable(colName = "Venda on-line")
 	private char online;

@@ -3,7 +3,6 @@ package br.com.pcsocial.servidor.modelo;
 import java.io.Serializable;
 import java.util.Date;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -29,7 +28,7 @@ public class ReceitaHospedagem implements Serializable {
 	private Double valor;
 	@Temporal(javax.persistence.TemporalType.DATE)
 	private Date dataReceita;
-	@ManyToOne(cascade = CascadeType.PERSIST, optional=true)
+	@ManyToOne
 	@JoinColumn
 	@Fetch(FetchMode.JOIN)
 	private Hospedagem hospedagem;

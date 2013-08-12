@@ -16,7 +16,9 @@ public interface HospedagemDao {
 	public List<Hospedagem> list();
 
 	public List<Hospedagem> list(Date dataInicial, Date dataFinal);
-
+	
+	public List<Hospedagem> listHospedagemTarifas(Date dataInicial, Date dataFinal);
+	
 	public void remove(Hospedagem hospedagem);
 
 	public void update(Hospedagem hospedagem, DetHospedagem detHospedagem, ReceitaHospedagem recHospedagem);

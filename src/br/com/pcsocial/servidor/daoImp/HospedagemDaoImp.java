@@ -8,8 +8,8 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import br.com.pcsocial.servidor.dao.HospedagemDao;
-import br.com.pcsocial.servidor.modelo.Hospedagem;
 import br.com.pcsocial.servidor.modelo.DetHospedagem;
+import br.com.pcsocial.servidor.modelo.Hospedagem;
 import br.com.pcsocial.servidor.modelo.ReceitaHospedagem;
 import br.com.pcsocial.servidor.util.HibernateUtil;
 
@@ -52,9 +52,11 @@ public class HospedagemDaoImp implements HospedagemDao {
 	public List<Hospedagem> list(Date dataInicial, Date dataFinal) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		Query q = session
-				.createQuery("from Hospedagem where dataEntrada >= :dataInicial ");// and "
+				.createQuery("from Hospedagem " +
+						"where (dataEntrada >= :dataInicial or dataSaida<= :dataFinal)");// and "
 						//+ " :dataFinal");
 		q.setDate("dataInicial", dataInicial);
+		q.setDate("dataFinal", dataFinal);
 		//q.setDate("dataFinal", dataFinal);
 		try {
 			return q.list();
@@ -80,5 +82,12 @@ public class HospedagemDaoImp implements HospedagemDao {
 		session.update(recHospedagem);
 		t.commit();
 		session.close();
+	}
+
+	@Override
+	public List<Hospedagem> listHospedagemTarifas(Date dataInicial,
+			Date dataFinal) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
